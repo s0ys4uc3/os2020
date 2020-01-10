@@ -11,4 +11,3 @@ Student Info
 
 * Student Name: *Phạm Minh Long*
 * Student ID: *BI9-146*
-
