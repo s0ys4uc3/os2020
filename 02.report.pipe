@@ -1,0 +1,41 @@
+Task 1: Check all files have 'list' in their name in a directory
+Command: find | grep "list"
+Output:
+./list
+./list/sampletext
+(searched from my desktop directory)
+
+Task 2: Count how many lines that /etc/passwd has 
+Command: wc -l /etc/passwd
+Output: 41 /etc/passwd
+
+Task 3: Check how much memory that your machine has, not free
+memory
+Command: free -h
+Output:
+              total        used        free      shared  buff/cache   available
+Mem:            11G        2.4G        5.9G        684M        3.4G        8.3G
+Swap:           15G          0B         15G
+
+
+Task 4: Find how many logical core that your CPU has
+Command: cat /proc/cpuinfo
+Output:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+stepping	: 10
+microcode	: 0xca
+cpu MHz		: 800.024
+cache size	: 6144 KB
+physical id	: 0
+
+
+Task 5: Count how many .jpg files that you have in your photo
+directory
+Command: find *.jpg | wc -l
+Output:
+find: ‘*.jpg’: No such file or directory
+0
