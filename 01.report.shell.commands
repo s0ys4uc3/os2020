@@ -1,0 +1,86 @@
+Command 1. echo hello world
+Output: hello world
+
+Command 2: passwd
+Output:
+Changing password for milos
+(current) UNIX password:
+Enter new UNIx password:
+Retype new UNIX password:
+Bad: new password is too simple
+Enter new UNIx password:
+Retype new UNIX password:
+passwd password updated successfully
+
+Command 3: date
+Output: Thu Jan 16 09:14:56 +07 2020 
+(current time when I just have typed the command and pressed Enter)
+
+Command 4: hostname
+Output: RESONANCE
+(Name of the computer)
+
+Command 5: arch
+Output: x86_64
+(architecture of the CPU)
+
+Command 6: uname -a
+Linux RESONANCE 5.0.0-37-generic #40~18.04.1-Ubuntu SMP Thu Nov 14 12:06:39 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+(System information)
+
+Command 7: dmesg
+Output:
+[    0.000000] microcode: microcode updated early to revision 0xca, date = 2019-10-03
+[    0.000000] Linux version 5.0.0-37-generic (buildd@lcy01-amd64-023) (gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1)) #40~18.04.1-Ubuntu SMP Thu Nov 14 12:06:39 UTC 2019 (Ubuntu 5.0.0-37.40~18.04.1-generic 5.0.21)
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.0.0-37-generic root=UUID=2fea35ee-b460-4a80-885d-dc7ec9cfb6ea ro quiet splash vt.handoff=1
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Hygon HygonGenuine
+[    0.000000]   Centaur CentaurHauls
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+(Print kernel & driver messages)
+
+Command 8: uptime
+Output:  09:24:36 up 30 min,  1 user,  load average: 0.57, 0.54, 0.52
+
+Command 9: who im i
+Output: (nothing)
+
+Command 10: whoami
+Output: milos
+(display username)
+
+Command 11: who
+Output: milos    :0           2020-01-16 15:54 (:0)
+
+Command 12: id
+Output: uid=1000(milos) gid=1000(milos) groups=1000(milos),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),116(lpadmin),126(sambashare)
+(print user and group id's)
+
+Command 13: last
+Output: milos    :0           :0               Thu Jan 16 15:54   still logged in
+reboot   system boot  5.0.0-37-generic Thu Jan 16 15:54   still running
+milos    :0           :0               Wed Jan 15 20:58 - down   (02:09)
+reboot   system boot  5.0.0-37-generic Thu Jan 16 03:57 - 23:08  (-4:49)
+milos    :0           :0               Wed Jan 15 10:14 - 14:10  (03:56)
+reboot   system boot  5.0.0-37-generic Wed Jan 15 17:13 - 14:10  (-3:02)
+milos    :0           :0               Tue Jan 14 18:02 - 20:13  (02:11)
+reboot   system boot  5.0.0-37-generic Wed Jan 15 01:01 - 20:13  (-4:47)
+milos    :0           :0               Tue Jan 14 09:24 - 13:28  (04:04)
+reboot   system boot  5.0.0-37-generic Tue Jan 14 09:22 - 13:28  (04:05)
+(system boot log)
+
+Command 14: finger
+Output: 
+Command 'finger' not found, but can be installed with:
+
+sudo apt install finger
+
+Command 15: w
+Output: 
+ 09:32:21 up 38 min,  1 user,  load average: 0.44, 0.51, 0.53
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+milos    :0       :0               15:54   ?xdm?   3:59   0.03s /usr/lib/gdm3/g
+
