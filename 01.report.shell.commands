@@ -77,7 +77,7 @@ Output:
 Command 'finger' not found, but can be installed with:
 
 sudo apt install finger
-
+ 
 Command 15: w
 Output: 
  09:32:21 up 38 min,  1 user,  load average: 0.44, 0.51, 0.53
