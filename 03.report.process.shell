@@ -1,0 +1,53 @@
+Task 1: List all your running processes
+Command: ps -aux
+Output: 
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0 225432  9244 ?        Ss   11:08   0:05 /sbin/init spla
+root         2  0.0  0.0      0     0 ?        S    11:08   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        I<   11:08   0:00 [rcu_gp]
+root         4  0.0  0.0      0     0 ?        I<   11:08   0:00 [rcu_par_gp]
+root         6  0.0  0.0      0     0 ?        I<   11:08   0:00 [kworker/0:0H-k
+root         8  0.0  0.0      0     0 ?        I<   11:08   0:00 [mm_percpu_wq]
+root         9  0.0  0.0      0     0 ?        S    11:08   0:00 [ksoftirqd/0]
+root        10  0.0  0.0      0     0 ?        I    11:08   0:04 [rcu_sched]
+root        11  0.0  0.0      0     0 ?        S    11:08   0:00 [migration/0]
+
+
+Task 2: Start a new process
+Command: gnome-calculator
+Result: Window of calculator application pop-up
+
+
+Task 3: Find process id of your newly-created process
+Command: ps -aux | grep "gnome-calculator" | awk '{if(NR==1) print $2}'
+Output: 8999
+
+
+Task 4: Show its process status
+Command: cat /proc/7200/status
+Output:
+Name:	gnome-calculato
+Umask:	0022
+State:	S (sleeping)
+Tgid:	7200
+Ngid:	0
+Pid:	7200
+PPid:	3671
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+
+
+Task 5: Pause it
+Command: kill -s STOP 8999
+Result: Pause the calculator application
+
+
+Task 6: Resume it
+Command: kill -s CONT 8999
+Result: Resume the calculator application
+
+
+Task 7: Terminate it
+Command: kill -s KILL 8999
+Result: Close the calculator application
