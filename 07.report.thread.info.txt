@@ -1,0 +1,10 @@
+Find the Process ID of Chromium:
+Input: ps -aux | grep "chromium" | awk '{if(NR == 1) print $2}'
+Output: 2352
+
+Show number of threads for process 'chromium'
+Input: ps -o nlwp 2352
+Output: 
+NLWP
+  34
+
