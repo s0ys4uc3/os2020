@@ -1,0 +1,11 @@
+Show number of context switches for process "systemd"
+
+Using /proc/sched_debug
+Input: cat /proc/sched_debug | grep "systemd" | awk '{if (NR == 1) print $5}'
+Output: 850510
+
+Using /proc/<processID>/sched
+Input: cat /proc/1/sched | grep "switches" | sed -n 1p
+Output: 
+nr_switches                                  :               876813
+
